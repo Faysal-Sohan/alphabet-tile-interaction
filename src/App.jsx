@@ -7,14 +7,6 @@ const App = () => {
 
   const alphabets = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ").split('');
 
-  const colors = [];
-  for (let i = 0; i < 26; i++) {
-    const red = Math.floor(Math.random() * 256).toString(16).padStart(2, '0');
-    const green = Math.floor(Math.random() * 256).toString(16).padStart(2, '0');
-    const blue = Math.floor(Math.random() * 256).toString(16).padStart(2, '0');
-    colors.push(`bg-[#${red}${green}${blue}]`);
-  }
-
   const handleString = (letter) => {
     const len = outputString.length;
     if (len == 0) {
